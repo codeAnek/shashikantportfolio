@@ -25,7 +25,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
         transition={{ duration: 0.2 }}
         className="flex flex-col items-start max-w-full overflow-hidden rounded-xl bg-gray-900"
       >
-        <img src={image} alt={name} className="object-cover w-full h-60 md:h-64 lg:h-72" />
+        <img src={`${import.meta.env.BASE_URL}${image}`} alt={name} className="object-cover w-full h-60 md:h-64 lg:h-72" />
         <div className="flex flex-col justify-start p-4 text-gray-400 text-sm w-full">
           <h2 className="text-lg font-bold text-white mb-1">{name}</h2>
           {tech && <p className="text-teal-400 text-sm mb-2">{tech}</p>}

@@ -44,7 +44,7 @@ export const CommonCard = (props: CommonCardProps) => {
     >
       
       <div className="w-20 h-20 flex-shrink-0">
-        <img src={image} alt={name} className="w-full h-full object-contain rounded-lg" />
+        <img src={`${import.meta.env.BASE_URL}${image}`} alt={name} className="w-full h-full object-contain rounded-lg" />
       </div>
 
       

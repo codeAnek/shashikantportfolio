@@ -38,7 +38,7 @@ export const Home = () => {
       </motion.div>
       <motion.div className="flex flex-1 items-start justify-center mt-4 lg:mt-0 max-w-full">
         <motion.img
-          src="/shashi-1.png"
+          src={`${import.meta.env.BASE_URL}shashi-1.png`}
           alt="profile"
           className="w-auto max-w-full max-h-[100vh] object-contain rounded-xl shadow-lg"
         />
